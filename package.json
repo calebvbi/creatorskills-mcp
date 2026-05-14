@@ -1,0 +1,45 @@
+{
+  "name": "creatorskills-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for the CreatorSkills catalog \u2014 browse, search, and install AI skills directly from Claude, Cursor, and Cline.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-skills",
+    "claude",
+    "creatorskills",
+    "content-creator"
+  ],
+  "author": "CreatorSkills <support@creatorskills.co>",
+  "license": "MIT",
+  "homepage": "https://creatorskills.co/docs/mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caleb-leigh/creator-skills.git",
+    "directory": "mcp"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "creatorskills-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
