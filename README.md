@@ -14,6 +14,10 @@ Browse, search, and install AI skills for content creators — directly from Cla
 | `search_skills` | Semantic keyword search across the catalog |
 | `get_checkout_url` | Generate a checkout URL with UTM attribution |
 
+## Requirements
+
+Use Node.js 22.23.4 or later in the 22.x line, 24.22.1 or later in 24.x, or 26.12.1 or later in 26.x. Older patch releases and end-of-life Node.js versions are not supported. The development and release baseline is pinned in `.node-version`.
+
 ## Install
 
 ### Claude Desktop
